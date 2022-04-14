@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Ant-Version: Apache Ant 1.10.12
-Created-By: 11.0.10+9 (AdoptOpenJDK)
-built-by: ericli
-Main-Class: ui.Application
-Class-Path: libs/log4j-1.2.17.jar
-
