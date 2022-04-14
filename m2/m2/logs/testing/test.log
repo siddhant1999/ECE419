@@ -1,0 +1,480 @@
+2022-02-21 13:40:12,716 ERROR [main] root: Error! Unable to establish connection to ECS: 
+java.lang.NullPointerException
+	at app_kvServer.KVServer.connectECS(KVServer.java:332)
+	at testing.TestECSToServer.setUp(TestECSToServer.java:35)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1617)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:1039)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:2162)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:853)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1388)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1361)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:834)
+	at org.apache.tools.ant.Main.startAnt(Main.java:223)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:284)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:101)
+2022-02-21 13:42:02,180 ERROR [main] root: Error! Unable to establish connection to ECS: 
+java.lang.NullPointerException
+	at app_kvServer.KVServer.connectECS(KVServer.java:332)
+	at testing.TestECSToServer.setUp(TestECSToServer.java:35)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1617)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:1039)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:2162)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:853)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1388)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1361)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:834)
+	at org.apache.tools.ant.Main.startAnt(Main.java:223)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:284)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:101)
+2022-02-21 13:57:09,904 ERROR [main] root: Error! Unable to establish connection to ECS: 
+java.lang.NullPointerException
+	at app_kvServer.KVServer.connectECS(KVServer.java:332)
+	at testing.TestECSToServer.setUp(TestECSToServer.java:36)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1617)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:1039)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:2162)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:853)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1388)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1361)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:834)
+	at org.apache.tools.ant.Main.startAnt(Main.java:223)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:284)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:101)
+2022-02-21 17:43:28,156 ERROR [main] root: Error! Unable to establish connection to ECS: 
+java.lang.NullPointerException
+	at app_kvServer.KVServer.connectECS(KVServer.java:332)
+	at testing.TestECSToServer.setUp(TestECSToServer.java:36)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1617)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:1039)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:2162)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:853)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1388)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1361)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:834)
+	at org.apache.tools.ant.Main.startAnt(Main.java:223)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:284)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:101)
+2022-02-21 17:47:40,501 ERROR [main] root: Error! Unable to establish connection to ECS: 
+java.lang.NullPointerException
+	at app_kvServer.KVServer.connectECS(KVServer.java:332)
+	at testing.TestECSToServer.setUp(TestECSToServer.java:39)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1617)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:1039)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:2162)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:853)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1388)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1361)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:834)
+	at org.apache.tools.ant.Main.startAnt(Main.java:223)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:284)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:101)
+2022-02-21 17:48:26,590 ERROR [main] root: Error! Unable to establish connection to ECS: 
+java.lang.NullPointerException
+	at app_kvServer.KVServer.connectECS(KVServer.java:332)
+	at testing.TestECSToServer.setUp(TestECSToServer.java:40)
+	at junit.framework.TestCase.runBare(TestCase.java:132)
+	at junit.framework.TestResult$1.protect(TestResult.java:110)
+	at junit.framework.TestResult.runProtected(TestResult.java:128)
+	at junit.framework.TestResult.run(TestResult.java:113)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at junit.framework.TestSuite.runTest(TestSuite.java:243)
+	at junit.framework.TestSuite.run(TestSuite.java:238)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:534)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeInVM(JUnitTask.java:1617)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:1039)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.executeOrQueue(JUnitTask.java:2162)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTask.execute(JUnitTask.java:853)
+	at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:292)
+	at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.java:99)
+	at org.apache.tools.ant.Task.perform(Task.java:350)
+	at org.apache.tools.ant.Target.execute(Target.java:449)
+	at org.apache.tools.ant.Target.performTasks(Target.java:470)
+	at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1388)
+	at org.apache.tools.ant.Project.executeTarget(Project.java:1361)
+	at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExecutor.java:41)
+	at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+	at org.apache.tools.ant.Main.runBuild(Main.java:834)
+	at org.apache.tools.ant.Main.startAnt(Main.java:223)
+	at org.apache.tools.ant.launch.Launcher.run(Launcher.java:284)
+	at org.apache.tools.ant.launch.Launcher.main(Launcher.java:101)
+2022-02-21 18:02:28,326 ERROR [Thread-1] root: Error! Connection lost! NullPointerException
+2022-02-21 18:35:10,680 ERROR [Thread-2] root: Unable to open server socket
+2022-02-21 18:35:10,684 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-21 18:35:59,403 ERROR [Thread-2] root: Unable to open server socket
+2022-02-21 18:35:59,404 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-21 18:36:16,251 ERROR [Thread-2] root: Unable to open server socket
+2022-02-21 18:36:16,253 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-21 18:37:16,612 ERROR [Thread-2] root: Unable to open server socket
+2022-02-21 18:37:16,614 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-21 18:48:51,784 ERROR [Thread-2] root: Unable to open server socket
+2022-02-21 18:48:51,784 ERROR [Thread-1] root: Error! Connection lost! NullPointerException
+2022-02-21 18:48:51,788 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-21 19:00:05,079 ERROR [Thread-2] root: Unable to open server socket
+2022-02-21 19:00:05,081 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-21 19:00:19,238 ERROR [Thread-2] root: Unable to open server socket
+2022-02-21 19:00:19,242 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-21 19:00:21,732 ERROR [Thread-2] root: Unable to open server socket
+2022-02-21 19:00:21,735 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-21 19:18:51,940 ERROR [Thread-2] root: Unable to open server socket
+2022-02-21 19:18:51,942 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-21 19:20:21,071 ERROR [Thread-2] root: Unable to open server socket
+2022-02-21 19:20:21,075 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-21 19:27:30,393 ERROR [Thread-2] root: Unable to open server socket
+2022-02-21 19:27:30,398 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-21 19:27:30,406 ERROR [Thread-4] root: Unable to open server socket
+2022-02-21 19:27:30,406 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-21 23:47:37,108 ERROR [Thread-2] root: Unable to open server socket
+2022-02-21 23:47:37,110 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-21 23:47:37,116 ERROR [Thread-4] root: Unable to open server socket
+2022-02-21 23:47:37,119 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-21 23:47:39,941 ERROR [Thread-2] root: Unable to open server socket
+2022-02-21 23:47:39,944 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-21 23:47:39,944 ERROR [Thread-4] root: Unable to open server socket
+2022-02-21 23:47:39,946 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-22 00:53:14,110 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 00:53:14,111 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 00:53:14,113 ERROR [Thread-4] root: Unable to open server socket
+2022-02-22 00:53:14,113 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-22 00:53:22,954 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 00:53:22,963 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 00:53:22,964 ERROR [Thread-4] root: Unable to open server socket
+2022-02-22 00:53:22,964 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-22 00:53:35,635 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 00:53:35,635 ERROR [Thread-1] root: Error! Connection lost! NullPointerException
+2022-02-22 00:53:35,638 ERROR [Thread-4] root: Unable to open server socket
+2022-02-22 00:53:35,644 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-22 00:53:35,639 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 00:53:45,192 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 00:53:45,193 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 00:53:45,205 ERROR [Thread-4] root: Unable to open server socket
+2022-02-22 00:53:45,208 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-22 00:53:45,209 ERROR [Thread-1] root: Error! Connection lost! NullPointerException
+2022-02-22 00:53:45,209 ERROR [Thread-3] root: Error! Connection lost! NullPointerException
+2022-02-22 00:55:05,573 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 00:55:05,592 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 00:55:20,864 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 00:55:20,867 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 00:55:20,868 ERROR [Thread-4] root: Unable to open server socket
+2022-02-22 00:55:20,869 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-22 00:55:34,964 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 00:55:34,971 ERROR [Thread-4] root: Unable to open server socket
+2022-02-22 00:55:34,973 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 00:55:34,974 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-22 00:55:46,291 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 00:55:46,295 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 00:55:46,296 ERROR [Thread-4] root: Unable to open server socket
+2022-02-22 00:55:46,299 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-22 00:56:02,777 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 00:56:02,780 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 11:41:55,803 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 11:41:55,812 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 11:58:21,027 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 11:58:21,031 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 14:21:36,563 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 14:21:36,564 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 15:49:07,788 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 15:49:07,793 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 15:49:40,674 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 15:49:40,680 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 15:52:48,146 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 15:52:48,168 ERROR [Thread-4] root: Unable to open server socket
+2022-02-22 15:52:48,170 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 15:52:48,171 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-22 15:52:48,180 ERROR [Thread-6] root: Unable to open server socket
+2022-02-22 15:52:48,182 ERROR [Thread-6] root: Port already bound: 55550
+2022-02-22 16:04:05,922 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 16:04:05,922 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 16:04:05,934 ERROR [Thread-4] root: Unable to open server socket
+2022-02-22 16:04:05,936 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-22 16:04:05,938 ERROR [Thread-6] root: Unable to open server socket
+2022-02-22 16:04:05,941 ERROR [Thread-6] root: Port already bound: 55550
+2022-02-22 16:04:05,941 ERROR [Thread-8] root: Unable to open server socket
+2022-02-22 16:04:05,943 ERROR [Thread-8] root: Port already bound: 55550
+2022-02-22 16:04:24,321 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 16:04:24,328 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 16:04:24,333 ERROR [Thread-4] root: Unable to open server socket
+2022-02-22 16:04:24,333 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-22 16:04:24,337 ERROR [Thread-6] root: Unable to open server socket
+2022-02-22 16:04:24,337 ERROR [Thread-6] root: Port already bound: 55550
+2022-02-22 16:04:24,338 ERROR [Thread-8] root: Unable to open server socket
+2022-02-22 16:04:24,340 ERROR [Thread-8] root: Port already bound: 55550
+2022-02-22 16:04:45,554 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 16:04:45,555 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 16:04:45,558 ERROR [Thread-4] root: Unable to open server socket
+2022-02-22 16:04:45,559 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-22 16:04:45,563 ERROR [Thread-6] root: Unable to open server socket
+2022-02-22 16:04:45,564 ERROR [Thread-6] root: Port already bound: 55550
+2022-02-22 16:04:45,565 ERROR [Thread-8] root: Unable to open server socket
+2022-02-22 16:04:45,566 ERROR [Thread-8] root: Port already bound: 55550
+2022-02-22 16:04:52,596 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 16:04:52,599 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 16:04:52,602 ERROR [Thread-4] root: Unable to open server socket
+2022-02-22 16:04:52,602 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-22 16:04:52,604 ERROR [Thread-6] root: Unable to open server socket
+2022-02-22 16:04:52,605 ERROR [Thread-6] root: Port already bound: 55550
+2022-02-22 16:04:52,605 ERROR [Thread-8] root: Unable to open server socket
+2022-02-22 16:04:52,607 ERROR [Thread-8] root: Port already bound: 55550
+2022-02-22 16:04:59,535 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 16:04:59,542 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 16:04:59,546 ERROR [Thread-4] root: Unable to open server socket
+2022-02-22 16:04:59,546 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-22 16:04:59,550 ERROR [Thread-6] root: Unable to open server socket
+2022-02-22 16:04:59,550 ERROR [Thread-6] root: Port already bound: 55550
+2022-02-22 16:04:59,551 ERROR [Thread-8] root: Unable to open server socket
+2022-02-22 16:04:59,553 ERROR [Thread-8] root: Port already bound: 55550
+2022-02-22 16:05:30,286 ERROR [Thread-2] root: Unable to open server socket
+2022-02-22 16:05:30,306 ERROR [Thread-2] root: Port already bound: 55550
+2022-02-22 16:05:30,312 ERROR [Thread-4] root: Unable to open server socket
+2022-02-22 16:05:30,313 ERROR [Thread-4] root: Port already bound: 55550
+2022-02-22 16:05:30,314 ERROR [Thread-6] root: Unable to open server socket
+2022-02-22 16:05:30,315 ERROR [Thread-6] root: Port already bound: 55550
+2022-02-22 16:05:30,316 ERROR [Thread-8] root: Unable to open server socket
+2022-03-31 20:17:21,994 ERROR [Thread-2] root: Unable to open server socket
+2022-03-31 20:17:21,984 ERROR [Thread-0] root: Unable to open server socket
+2022-03-31 20:17:21,984 ERROR [Thread-1] root: Unable to open server socket
+2022-03-31 20:17:22,000 ERROR [Thread-1] root: Port already bound: 103
+2022-03-31 20:17:21,998 ERROR [Thread-0] root: Port already bound: 100
+2022-03-31 20:17:21,998 ERROR [Thread-2] root: Port already bound: 104
+2022-03-31 20:17:22,233 ERROR [Thread-36] root: Unable to open server socket
+2022-03-31 20:17:22,234 ERROR [Thread-36] root: Port already bound: 107
+2022-03-31 20:17:22,238 ERROR [Thread-37] root: Unable to open server socket
+2022-03-31 20:17:22,238 ERROR [Thread-37] root: Port already bound: 108
+2022-03-31 20:17:22,241 ERROR [Thread-38] root: Unable to open server socket
+2022-03-31 20:17:22,241 ERROR [Thread-38] root: Port already bound: 109
+2022-03-31 20:17:22,250 ERROR [Thread-39] root: Unable to open server socket
+2022-03-31 20:17:22,250 ERROR [Thread-39] root: Port already bound: 107
+2022-03-31 20:17:22,251 ERROR [Thread-40] root: Unable to open server socket
+2022-03-31 20:17:22,252 ERROR [Thread-41] root: Unable to open server socket
+2022-03-31 20:17:22,253 ERROR [Thread-41] root: Port already bound: 109
+2022-03-31 20:17:22,252 ERROR [Thread-40] root: Port already bound: 108
+2022-03-31 20:17:22,255 ERROR [Thread-42] root: Unable to open server socket
+2022-03-31 20:17:22,256 ERROR [Thread-42] root: Port already bound: 107
+2022-03-31 20:17:22,257 ERROR [Thread-43] root: Unable to open server socket
+2022-03-31 20:17:22,258 ERROR [Thread-43] root: Port already bound: 108
+2022-03-31 20:17:22,258 ERROR [Thread-44] root: Unable to open server socket
+2022-03-31 20:17:22,259 ERROR [Thread-44] root: Port already bound: 109
+2022-03-31 20:17:22,265 ERROR [Thread-45] root: Unable to open server socket
+2022-03-31 20:17:22,265 ERROR [Thread-45] root: Port already bound: 107
+2022-03-31 20:17:22,266 ERROR [Thread-46] root: Unable to open server socket
+2022-03-31 20:17:22,267 ERROR [Thread-46] root: Port already bound: 108
+2022-03-31 20:17:22,267 ERROR [Thread-47] root: Unable to open server socket
+2022-03-31 20:17:22,270 ERROR [Thread-47] root: Port already bound: 109
+2022-03-31 20:17:22,269 ERROR [Thread-48] root: Unable to open server socket
+2022-03-31 20:17:22,272 ERROR [Thread-48] root: Port already bound: 107
+2022-03-31 20:17:22,271 ERROR [Thread-50] root: Unable to open server socket
+2022-03-31 20:17:22,273 ERROR [Thread-50] root: Port already bound: 109
+2022-03-31 20:17:22,270 ERROR [Thread-49] root: Unable to open server socket
+2022-03-31 20:17:22,278 ERROR [Thread-49] root: Port already bound: 108
+2022-03-31 20:17:22,279 ERROR [Thread-51] root: Unable to open server socket
+2022-03-31 20:17:22,280 ERROR [Thread-51] root: Port already bound: 120
+2022-03-31 20:17:22,283 ERROR [Thread-52] root: Unable to open server socket
+2022-03-31 20:17:22,284 ERROR [Thread-52] root: Port already bound: 121
+2022-03-31 20:17:22,287 ERROR [Thread-53] root: Unable to open server socket
+2022-03-31 20:17:22,287 ERROR [Thread-53] root: Port already bound: 122
+2022-03-31 20:17:22,290 ERROR [Thread-54] root: Unable to open server socket
+2022-03-31 20:17:22,290 ERROR [Thread-54] root: Port already bound: 123
+2022-03-31 20:17:22,293 ERROR [Thread-55] root: Unable to open server socket
+2022-03-31 20:17:22,294 ERROR [Thread-55] root: Port already bound: 120
+2022-03-31 20:17:22,295 ERROR [Thread-56] root: Unable to open server socket
+2022-03-31 20:17:22,295 ERROR [Thread-56] root: Port already bound: 121
+2022-03-31 20:17:22,295 ERROR [Thread-57] root: Unable to open server socket
+2022-03-31 20:17:22,298 ERROR [Thread-57] root: Port already bound: 122
+2022-03-31 20:17:22,298 ERROR [Thread-58] root: Unable to open server socket
+2022-03-31 20:17:22,302 ERROR [Thread-58] root: Port already bound: 123
+2022-03-31 20:17:22,302 ERROR [Thread-60] root: Unable to open server socket
+2022-03-31 20:17:22,302 ERROR [Thread-59] root: Unable to open server socket
+2022-03-31 20:17:22,305 ERROR [Thread-59] root: Port already bound: 120
+2022-03-31 20:17:22,304 ERROR [Thread-62] root: Unable to open server socket
+2022-03-31 20:17:22,307 ERROR [Thread-62] root: Port already bound: 123
+2022-03-31 20:17:22,304 ERROR [Thread-60] root: Port already bound: 121
+2022-03-31 20:17:22,303 ERROR [Thread-61] root: Unable to open server socket
+2022-03-31 20:17:22,311 ERROR [Thread-61] root: Port already bound: 122
+2022-03-31 20:17:22,310 ERROR [Thread-63] root: Unable to open server socket
+2022-03-31 20:17:22,313 ERROR [Thread-63] root: Port already bound: 105
+2022-03-31 20:17:22,314 ERROR [Thread-64] root: Unable to open server socket
+2022-03-31 20:17:22,315 ERROR [Thread-64] root: Port already bound: 106
+2022-03-31 20:17:22,315 ERROR [Thread-65] root: Unable to open server socket
+2022-03-31 20:17:22,316 ERROR [Thread-65] root: Port already bound: 105
+2022-03-31 20:17:22,316 ERROR [Thread-66] root: Unable to open server socket
+2022-03-31 20:17:22,319 ERROR [Thread-66] root: Port already bound: 106
+2022-03-31 20:17:22,318 ERROR [Thread-68] root: Unable to open server socket
+2022-03-31 20:17:22,322 ERROR [Thread-68] root: Port already bound: 106
+2022-03-31 20:17:22,317 ERROR [Thread-67] root: Unable to open server socket
+2022-03-31 20:17:22,330 ERROR [Thread-67] root: Port already bound: 105
+2022-04-04 20:07:40,057 ERROR [Thread-0] root: Unable to open server socket
+2022-04-04 20:07:40,058 ERROR [Thread-0] root: Port already bound: 100
+2022-04-04 20:07:40,059 ERROR [Thread-1] root: Unable to open server socket
+2022-04-04 20:07:40,061 ERROR [Thread-1] root: Port already bound: 103
+2022-04-04 20:07:40,061 ERROR [Thread-2] root: Unable to open server socket
+2022-04-04 20:07:40,064 ERROR [Thread-2] root: Port already bound: 104
+2022-04-04 20:07:40,289 ERROR [Thread-36] root: Unable to open server socket
+2022-04-04 20:07:40,289 ERROR [Thread-36] root: Port already bound: 107
+2022-04-04 20:07:40,291 ERROR [Thread-38] root: Unable to open server socket
+2022-04-04 20:07:40,296 ERROR [Thread-38] root: Port already bound: 109
+2022-04-04 20:07:40,290 ERROR [Thread-37] root: Unable to open server socket
+2022-04-04 20:07:40,296 ERROR [Thread-37] root: Port already bound: 108
+2022-04-04 20:07:40,302 ERROR [Thread-39] root: Unable to open server socket
+2022-04-04 20:07:40,303 ERROR [Thread-39] root: Port already bound: 107
+2022-04-04 20:07:40,303 ERROR [Thread-40] root: Unable to open server socket
+2022-04-04 20:07:40,305 ERROR [Thread-40] root: Port already bound: 108
+2022-04-04 20:07:40,305 ERROR [Thread-41] root: Unable to open server socket
+2022-04-04 20:07:40,306 ERROR [Thread-41] root: Port already bound: 109
+2022-04-04 20:07:40,311 ERROR [Thread-42] root: Unable to open server socket
+2022-04-04 20:07:40,311 ERROR [Thread-42] root: Port already bound: 107
+2022-04-04 20:07:40,312 ERROR [Thread-43] root: Unable to open server socket
+2022-04-04 20:07:40,313 ERROR [Thread-43] root: Port already bound: 108
+2022-04-04 20:07:40,312 ERROR [Thread-44] root: Unable to open server socket
+2022-04-04 20:07:40,314 ERROR [Thread-44] root: Port already bound: 109
+2022-04-04 20:07:40,320 ERROR [Thread-45] root: Unable to open server socket
+2022-04-04 20:07:40,320 ERROR [Thread-45] root: Port already bound: 107
+2022-04-04 20:07:40,321 ERROR [Thread-46] root: Unable to open server socket
+2022-04-04 20:07:40,322 ERROR [Thread-46] root: Port already bound: 108
+2022-04-04 20:07:40,322 ERROR [Thread-47] root: Unable to open server socket
+2022-04-04 20:07:40,325 ERROR [Thread-47] root: Port already bound: 109
+2022-04-04 20:07:40,328 ERROR [Thread-48] root: Unable to open server socket
+2022-04-04 20:07:40,328 ERROR [Thread-48] root: Port already bound: 107
+2022-04-04 20:07:40,329 ERROR [Thread-49] root: Unable to open server socket
+2022-04-04 20:07:40,330 ERROR [Thread-49] root: Port already bound: 108
+2022-04-04 20:07:40,330 ERROR [Thread-50] root: Unable to open server socket
+2022-04-04 20:07:40,331 ERROR [Thread-50] root: Port already bound: 109
+2022-04-04 20:07:40,333 ERROR [Thread-51] root: Unable to open server socket
+2022-04-04 20:07:40,333 ERROR [Thread-51] root: Port already bound: 120
+2022-04-04 20:07:40,334 ERROR [Thread-53] root: Unable to open server socket
+2022-04-04 20:07:40,335 ERROR [Thread-53] root: Port already bound: 122
+2022-04-04 20:07:40,333 ERROR [Thread-52] root: Unable to open server socket
+2022-04-04 20:07:40,336 ERROR [Thread-52] root: Port already bound: 121
+2022-04-04 20:07:40,335 ERROR [Thread-54] root: Unable to open server socket
+2022-04-04 20:07:40,344 ERROR [Thread-54] root: Port already bound: 123
+2022-04-04 20:07:40,339 ERROR [Thread-58] root: Unable to open server socket
+2022-04-04 20:07:40,345 ERROR [Thread-58] root: Port already bound: 123
+2022-04-04 20:07:40,339 ERROR [Thread-57] root: Unable to open server socket
+2022-04-04 20:07:40,338 ERROR [Thread-56] root: Unable to open server socket
+2022-04-04 20:07:40,350 ERROR [Thread-56] root: Port already bound: 121
+2022-04-04 20:07:40,338 ERROR [Thread-55] root: Unable to open server socket
+2022-04-04 20:07:40,352 ERROR [Thread-55] root: Port already bound: 120
+2022-04-04 20:07:40,351 ERROR [Thread-67] root: Unable to open server socket
+2022-04-04 20:07:40,356 ERROR [Thread-67] root: Port already bound: 105
+2022-04-04 20:07:40,350 ERROR [Thread-66] root: Unable to open server socket
+2022-04-04 20:07:40,360 ERROR [Thread-66] root: Port already bound: 106
+2022-04-04 20:07:40,350 ERROR [Thread-65] root: Unable to open server socket
+2022-04-04 20:07:40,362 ERROR [Thread-65] root: Port already bound: 105
+2022-04-04 20:07:40,350 ERROR [Thread-57] root: Port already bound: 122
+2022-04-04 20:07:40,348 ERROR [Thread-64] root: Unable to open server socket
+2022-04-04 20:07:40,376 ERROR [Thread-64] root: Port already bound: 106
+2022-04-04 20:07:40,348 ERROR [Thread-60] root: Unable to open server socket
+2022-04-04 20:07:40,380 ERROR [Thread-60] root: Port already bound: 121
+2022-04-04 20:07:40,348 ERROR [Thread-63] root: Unable to open server socket
+2022-04-04 20:07:40,346 ERROR [Thread-62] root: Unable to open server socket
+2022-04-04 20:07:40,384 ERROR [Thread-62] root: Port already bound: 123
+2022-04-04 20:07:40,345 ERROR [Thread-61] root: Unable to open server socket
+2022-04-04 20:07:40,344 ERROR [Thread-59] root: Unable to open server socket
+2022-04-04 20:07:40,388 ERROR [Thread-61] root: Port already bound: 122
+2022-04-04 20:07:40,383 ERROR [Thread-63] root: Port already bound: 105
+2022-04-04 20:07:40,353 ERROR [Thread-68] root: Unable to open server socket
+2022-04-04 20:07:40,392 ERROR [Thread-68] root: Port already bound: 106
+2022-04-04 20:07:40,389 ERROR [Thread-59] root: Port already bound: 120

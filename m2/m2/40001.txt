@@ -1,0 +1,6 @@
+2022-04-01 18:29:07,234 INFO  [main] root: KVServer initialized on port 40001
+2022-04-01 18:29:07,256 INFO  [Thread-0] root: Initializing server socket on 40001
+2022-04-01 18:29:07,266 ERROR [Thread-0] root: Unable to open server socket
+2022-04-01 18:29:07,266 ERROR [Thread-0] root: Port already bound: 40001
+running false null
+2022-04-01 18:29:07,266 INFO  [Thread-0] root: Server stopped.
