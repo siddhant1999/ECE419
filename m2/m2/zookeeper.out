@@ -1,0 +1,35 @@
+2022-04-04 19:26:36,656 [myid:] - INFO  [main:QuorumPeerConfig@136] - Reading configuration from: /Users/siddhantjain/GitHub/ECE419/m2/m2/zookeeper-3.4.11/bin/../conf/zoo.cfg
+2022-04-04 19:26:36,664 [myid:] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2022-04-04 19:26:36,664 [myid:] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2022-04-04 19:26:36,665 [myid:] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2022-04-04 19:26:36,665 [myid:] - WARN  [main:QuorumPeerMain@116] - Either no config or no quorum defined in config, running  in standalone mode
+2022-04-04 19:26:36,682 [myid:] - INFO  [main:QuorumPeerConfig@136] - Reading configuration from: /Users/siddhantjain/GitHub/ECE419/m2/m2/zookeeper-3.4.11/bin/../conf/zoo.cfg
+2022-04-04 19:26:36,683 [myid:] - INFO  [main:ZooKeeperServerMain@98] - Starting server
+2022-04-04 19:26:36,700 [myid:] - INFO  [main:Environment@100] - Server environment:zookeeper.version=3.4.11-37e277162d567b55a07d1755f0b31c32e93c01a0, built on 11/01/2017 18:06 GMT
+2022-04-04 19:26:36,700 [myid:] - INFO  [main:Environment@100] - Server environment:host.name=localhost
+2022-04-04 19:26:36,700 [myid:] - INFO  [main:Environment@100] - Server environment:java.version=1.8.0_321
+2022-04-04 19:26:36,700 [myid:] - INFO  [main:Environment@100] - Server environment:java.vendor=Oracle Corporation
+2022-04-04 19:26:36,700 [myid:] - INFO  [main:Environment@100] - Server environment:java.home=/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home
+2022-04-04 19:26:36,700 [myid:] - INFO  [main:Environment@100] - Server environment:java.class.path=/Users/siddhantjain/GitHub/ECE419/m2/m2/zookeeper-3.4.11/bin/../build/classes:/Users/siddhantjain/GitHub/ECE419/m2/m2/zookeeper-3.4.11/bin/../build/lib/*.jar:/Users/siddhantjain/GitHub/ECE419/m2/m2/zookeeper-3.4.11/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/siddhantjain/GitHub/ECE419/m2/m2/zookeeper-3.4.11/bin/../lib/slf4j-api-1.6.1.jar:/Users/siddhantjain/GitHub/ECE419/m2/m2/zookeeper-3.4.11/bin/../lib/netty-3.10.5.Final.jar:/Users/siddhantjain/GitHub/ECE419/m2/m2/zookeeper-3.4.11/bin/../lib/log4j-1.2.16.jar:/Users/siddhantjain/GitHub/ECE419/m2/m2/zookeeper-3.4.11/bin/../lib/jline-0.9.94.jar:/Users/siddhantjain/GitHub/ECE419/m2/m2/zookeeper-3.4.11/bin/../lib/audience-annotations-0.5.0.jar:/Users/siddhantjain/GitHub/ECE419/m2/m2/zookeeper-3.4.11/bin/../zookeeper-3.4.11.jar:/Users/siddhantjain/GitHub/ECE419/m2/m2/zookeeper-3.4.11/bin/../src/java/lib/*.jar:/Users/siddhantjain/GitHub/ECE419/m2/m2/zookeeper-3.4.11/bin/../conf:
+2022-04-04 19:26:36,700 [myid:] - INFO  [main:Environment@100] - Server environment:java.library.path=/Users/siddhantjain/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2022-04-04 19:26:36,701 [myid:] - INFO  [main:Environment@100] - Server environment:java.io.tmpdir=/var/folders/25/3089q9yj3q32nn3d_8hbgckh0000gn/T/
+2022-04-04 19:26:36,701 [myid:] - INFO  [main:Environment@100] - Server environment:java.compiler=<NA>
+2022-04-04 19:26:36,702 [myid:] - INFO  [main:Environment@100] - Server environment:os.name=Mac OS X
+2022-04-04 19:26:36,702 [myid:] - INFO  [main:Environment@100] - Server environment:os.arch=x86_64
+2022-04-04 19:26:36,702 [myid:] - INFO  [main:Environment@100] - Server environment:os.version=12.1
+2022-04-04 19:26:36,702 [myid:] - INFO  [main:Environment@100] - Server environment:user.name=siddhantjain
+2022-04-04 19:26:36,702 [myid:] - INFO  [main:Environment@100] - Server environment:user.home=/Users/siddhantjain
+2022-04-04 19:26:36,702 [myid:] - INFO  [main:Environment@100] - Server environment:user.dir=/Users/siddhantjain/GitHub/ECE419/m2/m2
+2022-04-04 19:26:36,714 [myid:] - INFO  [main:ZooKeeperServer@825] - tickTime set to 2000
+2022-04-04 19:26:36,714 [myid:] - INFO  [main:ZooKeeperServer@834] - minSessionTimeout set to -1
+2022-04-04 19:26:36,715 [myid:] - INFO  [main:ZooKeeperServer@843] - maxSessionTimeout set to -1
+2022-04-04 19:26:36,727 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2022-04-04 19:26:36,738 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:2181
+2022-04-04 19:26:36,916 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:57567
+2022-04-04 19:26:36,928 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:ZooKeeperServer@938] - Client attempting to establish new session at /127.0.0.1:57567
+2022-04-04 19:26:36,930 [myid:] - INFO  [SyncThread:0:FileTxnLog@209] - Creating new log file: log.58
+2022-04-04 19:26:36,944 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@683] - Established session 0x1000242a77c0000 with negotiated timeout 4000 for client /127.0.0.1:57567
+2022-04-04 19:45:05,179 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@376] - Unable to read additional data from client sessionid 0x1000242a77c0000, likely client has closed socket
+2022-04-04 19:45:05,186 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1040] - Closed socket connection for client /127.0.0.1:57567 which had sessionid 0x1000242a77c0000
+2022-04-04 19:45:08,162 [myid:] - INFO  [SessionTracker:ZooKeeperServer@354] - Expiring session 0x1000242a77c0000, timeout of 4000ms exceeded
+2022-04-04 19:45:08,164 [myid:] - INFO  [ProcessThread(sid:0 cport:2181)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x1000242a77c0000
