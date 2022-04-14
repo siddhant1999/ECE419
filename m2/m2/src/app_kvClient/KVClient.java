@@ -12,6 +12,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.UnknownHostException;
 
+import java.util.Map;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 public class KVClient implements IKVClient {
     private static Logger logger = Logger.getRootLogger();
     private BufferedReader stdin;
@@ -60,6 +63,22 @@ public class KVClient implements IKVClient {
             System.out.println(PROMPT + "Application Exit");
         } else if (tokens[0].equals("help")) {
             printHelp();
+        } else if (tokens[0].equals("load")){
+            try {
+                ObjectMapper mapper = new ObjectMapper();
+                Map<?, ?> map = mapper.readValue(Paths.get("/nfs/ug/homes-5/f/fuandre/ECE419/m2/m2/javareadable.json").toFile(), Map.class);
+                for (Map.Entry<?, ?> entry : map.entrySet()) {
+                    if (client!=null) {
+                        String k = entry.getKey().toString();
+                        String v = entry.getValue().toString();
+                        put(k,v);
+                    } else {
+                        printError("Not Connected!");
+                    }
+                }
+            } catch (Exception e) {
+                //TODO: handle exception
+            }
         } else if (tokens[0].equals("logLevel")) {
             if(tokens.length == 2) {
                 String level = setLevel(tokens[1]);
