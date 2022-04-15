@@ -156,7 +156,7 @@ function App() {
     let t = 0;
 
     for (let i = 0; i < data[name].length; i++) {
-      for (let j = 0; j < 123456789; j++) {t+=1}
+      for (let j = 0; j < 103456789; j++) {t+=1}
       AddSong(data[name][i])
     }
     console.log("playlist")

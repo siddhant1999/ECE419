@@ -55,3 +55,7 @@ h2 {
 div {
   color:white;
 }
+
+html {
+  min-height: 100%;
+}
