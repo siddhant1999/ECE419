@@ -1,0 +1,34 @@
+{
+  "name": "material-ui-input",
+  "version": "1.0.0",
+  "description": "Simple and styled input - like material ui input text",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umarfarookm/material-ui-input.git"
+  },
+  "keywords": [
+    "input",
+    "textbox",
+    "text",
+    "material",
+    "ui",
+    "input",
+    "jquery-plugin",
+    "ui",
+    "input",
+    "material",
+    "ui",
+    "input",
+    "field"
+  ],
+  "author": "Umar Farook M",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/umarfarookm/material-ui-input/issues"
+  },
+  "homepage": "https://github.com/umarfarookm/material-ui-input#readme"
+}

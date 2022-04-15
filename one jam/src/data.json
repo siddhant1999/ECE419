@@ -1,0 +1,101 @@
+{
+
+	"Andre":[{
+		"name": "Somebody Else",
+		"artist": "The 1975",
+		"uri": "5hc71nKsUgtwQ3z52KEKQk"
+  },
+  {
+		"name": "Undress Rehearsal",
+		"artist": "Timeflies",
+		"uri": "1aPqexHVW20OTamBHdWWVL"
+  },
+  {
+		"name": "Daft Pretty Boys",
+		"artist": "Bad Suns",
+		"uri": "41d2Q6DHcM20OdzynkRtvf"
+  }
+],
+	"Sidd": [
+		{
+			"name": "Moonwalk",
+			"artist": "Rexx Life Raj",
+			"uri": "0bJQ2EJndGgy6gN63wSHty"
+	  },
+	  {
+			"name": "Youth",
+			"artist": "Glass Animals",
+			"uri": "1LPGwuFgIzbJoShfDdw7MY"
+	  },
+	  {
+			"name": "White Ferrari",
+			"artist": "Frank Ocean",
+			"uri": "2LMkwUfqC6S6s6qDVlEuzV"
+	  },
+	],
+
+	"Elisa" : [
+		{
+			"name": "Golden Dandelions",
+			"artist": "Barns Courtney",
+			"uri": "39mypRmMWQJpVdCsWNxT3h"
+	  },
+	  {
+			"name": "INDUSTRY BABY (feat. Jack Harlow)",
+			"artist": "Lil Nas X",
+			"uri": "27NovPIUIRrOZoCHxABJwK"
+	  },
+	  {
+			"name": "I Got You",
+			"artist": "Bebe Rexha",
+			"uri": "1FUViuNSldssMIawrOXF2i"
+	  },
+	  {
+			"name": "Believer",
+			"artist": "Imagine Dragons",
+			"uri": "6VRghJeP6I0w1KxkdWFfIh"
+	  },
+	  {
+			"name": "Love It If We Made It",
+			"artist": "The 1975",
+			"uri": "6WmIyn2fx1PKQ0XDpYj4VR"
+	  }
+	],
+	"Song" : [
+		{
+			"name": "Still Here",
+			"artist": "Drake",
+			"uri": "433P7tDcIAi6NLnf4Sh6tI"
+	  },
+	  {
+			"name": "Young Shahrukh",
+			"artist": "Tesher",
+			"uri": "42C9YmmOF7PkiHWpulxzcq"
+	  },
+	  {
+			"name": "Despacito - Remix",
+			"artist": "Luis Fonsi",
+			"uri": "5CtI0qwDJkDQGwXD1H1cLb"
+	  },
+	  {
+			"name": "Symphony (feat. Zara Larsson)",
+			"artist": "Clean Bandit",
+			"uri": "72gv4zhNvRVdQA0eOenCal"
+	  },
+	  {
+			"name": "American Money",
+			"artist": "B\u00d8RNS",
+			"uri": "4AewKenHXKBt643p473xCk"
+	  },
+	  {
+			"name": "Ivy",
+			"artist": "Frank Ocean",
+			"uri": "2ZWlPOoWh0626oTaHrnl2a"
+	  },
+	  {
+			"name": "Tangerine",
+			"artist": "Glass Animals",
+			"uri": "40rOlDoGejXXF4B0BYsjx8"
+	  },
+	]
+}

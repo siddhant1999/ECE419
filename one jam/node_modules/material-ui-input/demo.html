@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Material UI Input</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+
+        h4 {
+            color: steelblue;
+        }
+
+        .counter {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .c1-btn, .c2-btn {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            width: 100px;
+            height: 32px;
+            background-color: orange;
+            color: white;
+            border: none;
+            font-size: 14px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .c1-btn:hover, .c2-btn:hover {
+            background-color: #db8e00;
+        }
+
+        .c1-p, .c2-p {
+            color: gray;
+            font-size: 16px;
+        }
+
+        .c1-span, .c2-span {
+            color: green;
+        }
+
+        header, footer {
+            background-color: #d36a61;
+            color: white;
+            padding: 10px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer a {
+            color: antiquewhite;
+        }
+
+        .container {
+            margin: 60px 30px;
+
+        }
+    </style>
+</head>
+<body>
+<header>Material Ui Input</header>
+<div class="container">
+
+    <div class="material-ui-input" label="First Name" required="true"></div>
+    <button class="c1-btn" onclick="onC1BtnClick()">Get Value</button>
+</div>
+<footer> created by <a href="https://github.com/umarfarookm/material-ui-input" target="_blank">Umar Farook M</a>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="index.js"></script>
+<script type="text/javascript">
+
+
+    $(".material-ui-input").materialUiInput();
+    $('.container').append("<p class='c1-p'>The Input Value is : <span class='c1-span'>-</span></p>");
+
+    function onC1BtnClick() {
+        var value = $(".material-ui-input").getInputValue();
+        $('.c1-p .c1-span').text(value);
+    }
+
+
+</script>
+</body>
+</html>
