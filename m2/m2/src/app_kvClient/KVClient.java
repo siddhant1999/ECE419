@@ -104,7 +104,14 @@ public class KVClient implements IKVClient {
             } else {
                 printError("More than 1 key passed");
             }
-        } else if (tokens[0].equals("put")) {
+        } else if(tokens[0].equals("add")){
+            if(tokens.length == 3) {
+                System.out.println("Querying songs for " + tokens[1] + " with key: " + tokens[2]);
+                Thread.sleep(4000);
+                System.out.println("Successfully received songs for " + tokens[1]);
+            }
+        } 
+        else if (tokens[0].equals("put")) {
             if(tokens.length == 3) {
                 if (client!=null) {
                     String k = tokens[1];
