@@ -114,6 +114,7 @@ function App() {
 
   
   let [users, setUsers] = useState(new Array());
+  let [style, setStyle] = useState({display:"none"});
   let [playlist, setPlaylist] = useState(new Array());
 
   const AddSong = (item) => {
@@ -132,6 +133,15 @@ function App() {
 
   for (let i = 0; i < data[name].length; i++) {
     RemoveSong(data[name][i])
+  }
+
+  if (item.user_name ==="Sidd"){
+    alert("Primary Server Removed, Connecting to a New Server...")
+    // setStyle({display:"flex"})
+    // // let t= 0;
+    // // for (let j = 0; j < 11103456789; j++) {t+=1}
+    // setStyle({display:"none"})
+
   }
 
   // console.log(item)
@@ -198,6 +208,13 @@ function App() {
       style={{width:"80%", margin: "auto" }}
       >
 
+      {/* <h2
+        style={style
+        }
+        >
+          Connecting to New Server...
+        </h2> */}
+
         <h2
         style={{
         }}
@@ -231,8 +248,6 @@ function App() {
       
         </div>
               
-          // <User user_name={user.user_name} user_port={user.user_port} remove={RemoveUser}/>
-                  
        )}
       </div>
       <div>

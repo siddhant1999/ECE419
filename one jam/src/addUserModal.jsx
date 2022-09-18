@@ -88,8 +88,8 @@ function ModalInFunctionalComponent ({HandleLoginSubmit}) {
 						<Input id="name" name="name"  value={name} autoFocus onChange={(e) => setName(e.target.value.trim())} />
 					</FormControl>
 					<FormControl margin="normal" required fullWidth>
-						<InputLabel htmlFor="password">Port</InputLabel>
-						<Input name="password" type="number" id="password"  value={password} onChange={(e) => setPassword(e.target.value.trim())} />
+						<InputLabel htmlFor="password">Access Token</InputLabel>
+						<Input name="password" type="text" id="password"  value={password} onChange={(e) => setPassword(e.target.value.trim())} />
 					</FormControl>
 					<Button
 						type="submit"

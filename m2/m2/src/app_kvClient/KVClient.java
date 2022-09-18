@@ -24,23 +24,26 @@ public class KVClient implements IKVClient {
 
     private String serverAddress;
     private int serverPort;
-    public enum SocketStatus{CONNECTED, DISCONNECTED, CONNECTION_LOST};
+
+    public enum SocketStatus {
+        CONNECTED, DISCONNECTED, CONNECTION_LOST
+    };
 
     @Override
-    public void newConnection(String hostname, int port) throws Exception{
+    public void newConnection(String hostname, int port) throws Exception {
         // TODO Auto-generated method stub
-        client = new KVStore(hostname,port);
+        client = new KVStore(hostname, port);
         client.connect();
         logger.info("Connection established");
     }
 
     @Override
-    public KVCommInterface getStore(){
+    public KVCommInterface getStore() {
         return client;
     }
 
-    public void run(){
-        while(!stop) {
+    public void run() {
+        while (!stop) {
             stdin = new BufferedReader(new InputStreamReader(System.in));
             System.out.print(PROMPT);
 
@@ -57,32 +60,34 @@ public class KVClient implements IKVClient {
     private void handleCommand(String cmdLine) {
         String[] tokens = cmdLine.split("\\s+");
 
-        if(tokens[0].equals("quit")) {
-            stop = true; //exits out of the command line
+        if (tokens[0].equals("quit")) {
+            stop = true; // exits out of the command line
             disconnect();
             System.out.println(PROMPT + "Application Exit");
         } else if (tokens[0].equals("help")) {
             printHelp();
-        } else if (tokens[0].equals("load")){
-            try {
-                ObjectMapper mapper = new ObjectMapper();
-                Map<?, ?> map = mapper.readValue(Paths.get("/nfs/ug/homes-5/f/fuandre/ECE419/m2/m2/javareadable.json").toFile(), Map.class);
-                for (Map.Entry<?, ?> entry : map.entrySet()) {
-                    if (client!=null) {
-                        String k = entry.getKey().toString();
-                        String v = entry.getValue().toString();
-                        put(k,v);
-                    } else {
-                        printError("Not Connected!");
-                    }
-                }
-            } catch (Exception e) {
-                //TODO: handle exception
-            }
+        } else if (tokens[0].equals("load")) {
+            // try {
+            // ObjectMapper mapper = new ObjectMapper();
+            // Map<?, ?> map =
+            // mapper.readValue(Paths.get("/nfs/ug/homes-5/f/fuandre/ECE419/m2/m2/javareadable.json").toFile(),
+            // Map.class);
+            // for (Map.Entry<?, ?> entry : map.entrySet()) {
+            // if (client!=null) {
+            // String k = entry.getKey().toString();
+            // String v = entry.getValue().toString();
+            // put(k,v);
+            // } else {
+            // printError("Not Connected!");
+            // }
+            // }
+            // } catch (Exception e) {
+            // //TODO: handle exception
+            // }
         } else if (tokens[0].equals("logLevel")) {
-            if(tokens.length == 2) {
+            if (tokens.length == 2) {
                 String level = setLevel(tokens[1]);
-                if(level.equals(LogSetup.UNKNOWN_LEVEL)) {
+                if (level.equals(LogSetup.UNKNOWN_LEVEL)) {
                     printError("No valid log level!");
                     printPossibleLogLevels();
                 } else {
@@ -93,30 +98,43 @@ public class KVClient implements IKVClient {
                 printError("Invalid number of parameters!");
             }
         } else if (tokens[0].equals("get")) {
-            if(tokens.length == 2){
-                if (client != null) { //may also need to check client.isRunning() if implemented
+            if (tokens.length == 2) {
+                if (client != null) { // may also need to check client.isRunning() if implemented
                     get(tokens[1]);
                 } else {
                     printError("Not Connected!");
                 }
-            } else if (tokens.length == 1){
+            } else if (tokens.length == 1) {
                 printError("No key passed");
             } else {
                 printError("More than 1 key passed");
             }
-        } else if(tokens[0].equals("add")){
-            if(tokens.length == 3) {
+        } else if (tokens[0].equals("add")) {
+            if (tokens.length == 3) {
                 System.out.println("Querying songs for " + tokens[1] + " with key: " + tokens[2]);
-                Thread.sleep(4000);
+                try {
+                    java.lang.Thread.sleep(4000);
+                } catch (Exception e) {
+
+                }
                 System.out.println("Successfully received songs for " + tokens[1]);
             }
-        } 
-        else if (tokens[0].equals("put")) {
-            if(tokens.length == 3) {
-                if (client!=null) {
+        } else if (tokens[0].equals("remove")) {
+            if (tokens.length == 2) {
+                System.out.println("Shutting down server for " + tokens[1]);
+                try {
+                    java.lang.Thread.sleep(1000);
+                } catch (Exception e) {
+
+                }
+                System.out.println("Successfully shut down");
+            }
+        } else if (tokens[0].equals("put")) {
+            if (tokens.length == 3) {
+                if (client != null) {
                     String k = tokens[1];
                     String v = tokens[2];
-                    put(k,v);
+                    put(k, v);
                 } else {
                     printError("Not Connected!");
                 }
@@ -130,13 +148,13 @@ public class KVClient implements IKVClient {
                 printError("Incorrect number of arguments");
             }
         } else if (tokens[0].equals("connect")) {
-            if(tokens.length == 3) {
+            if (tokens.length == 3) {
                 try {
                     serverAddress = tokens[1];
                     serverPort = Integer.parseInt(tokens[2]);
                     newConnection(serverAddress, serverPort);
                     handleStatus(SocketStatus.CONNECTED);
-                } catch(NumberFormatException nfe) {
+                } catch (NumberFormatException nfe) {
                     printError("No valid address. Port must be a number!");
                     logger.error("Unable to parse argument <port>", nfe);
                 } catch (UnknownHostException e) {
@@ -153,8 +171,8 @@ public class KVClient implements IKVClient {
                 printError("Please provide address and port value for connect command");
             }
         } else if (tokens[0].equals("metadata")) {
-            try{
-                if (client!=null) {
+            try {
+                if (client != null) {
                     getMetadata();
                 } else {
                     printError("Not Connected!");
@@ -163,11 +181,11 @@ public class KVClient implements IKVClient {
                 System.out.println("Error in getting Metadata");
                 e.printStackTrace();
             }
-        } else if (tokens[0].equals("clientMetadata")){
+        } else if (tokens[0].equals("clientMetadata")) {
             getKVStoreMetadata();
-        } else if (tokens[0].equals("a")){
+        } else if (tokens[0].equals("a")) {
             getAllData();
-        } else if (tokens[0].equals("deleteAll")){
+        } else if (tokens[0].equals("deleteAll")) {
             deleteAllData();
         } else {
             printError("Unknown Command");
@@ -176,19 +194,19 @@ public class KVClient implements IKVClient {
     }
 
     private void put(String key, String value) {
-        if (key.getBytes().length <= 20 && value.getBytes().length <= 120*1000) {
+        if (key.getBytes().length <= 20 && value.getBytes().length <= 120 * 1000) {
             try {
-                logger.info("PUT key:\t '" + key + "'" +  " value:\t '" + value + "'");
+                logger.info("PUT key:\t '" + key + "'" + " value:\t '" + value + "'");
                 KVMessage kvMsg = client.put(key, value, false, true);
                 handleNewKVMessage(kvMsg);
-            } catch(Exception e){
+            } catch (Exception e) {
                 logger.info("ERROR PUT key:\t '" + key + "' Error Seen: " + e.getMessage());
                 disconnect();
                 handleStatus(SocketStatus.CONNECTION_LOST);
             }
         } else if (key.getBytes().length > 20) {
             printError("Key Size larger than 20 Bytes");
-        } else if (value.getBytes().length > 120*1000) {
+        } else if (value.getBytes().length > 120 * 1000) {
             printError("Value Size larger than 120 kBytes");
         }
     }
@@ -209,7 +227,7 @@ public class KVClient implements IKVClient {
         }
     }
 
-    private void getMetadata(){
+    private void getMetadata() {
         try {
             client.getMetadata();
         } catch (Exception e) {
@@ -219,7 +237,7 @@ public class KVClient implements IKVClient {
         }
     }
 
-    private void getKVStoreMetadata(){
+    private void getKVStoreMetadata() {
         if (client == null) {
             System.out.println("Not connected!");
             return;
@@ -227,7 +245,7 @@ public class KVClient implements IKVClient {
         client.printMetadata("KV Client");
     }
 
-    private void getAllData(){
+    private void getAllData() {
         if (client == null) {
             System.out.println("Not connected!");
             return;
@@ -235,7 +253,7 @@ public class KVClient implements IKVClient {
         client.getAllData();
     }
 
-    public void deleteAllData(){
+    public void deleteAllData() {
         if (client == null) {
             System.out.println("Not connected!");
             return;
@@ -243,7 +261,7 @@ public class KVClient implements IKVClient {
         client.deleteAllData();
     }
 
-    private void disconnect(){
+    private void disconnect() {
         if (client != null) {
             serverPort = client.port;
             serverAddress = client.address;
@@ -255,9 +273,9 @@ public class KVClient implements IKVClient {
         }
     }
 
-    public void handleStatus(SocketStatus status){
-        if(status == SocketStatus.CONNECTED) {
-            System.out.println(PROMPT +"Connection Started: "
+    public void handleStatus(SocketStatus status) {
+        if (status == SocketStatus.CONNECTED) {
+            System.out.println(PROMPT + "Connection Started: "
                     + serverPort + " / " + serverAddress);
         } else if (status == SocketStatus.DISCONNECTED) {
             System.out.println(PROMPT + "Connection terminated: "
@@ -269,7 +287,7 @@ public class KVClient implements IKVClient {
     }
 
     public void handleNewKVMessage(KVMessage kvMessage) {
-        if(!stop) {
+        if (!stop) {
             if (kvMessage != null) {
                 switch (kvMessage.getStatus()) {
                     case GET_SUCCESS:
@@ -309,25 +327,25 @@ public class KVClient implements IKVClient {
 
     private String setLevel(String levelString) {
 
-        if(levelString.equals(Level.ALL.toString())) {
+        if (levelString.equals(Level.ALL.toString())) {
             logger.setLevel(Level.ALL);
             return Level.ALL.toString();
-        } else if(levelString.equals(Level.DEBUG.toString())) {
+        } else if (levelString.equals(Level.DEBUG.toString())) {
             logger.setLevel(Level.DEBUG);
             return Level.DEBUG.toString();
-        } else if(levelString.equals(Level.INFO.toString())) {
+        } else if (levelString.equals(Level.INFO.toString())) {
             logger.setLevel(Level.INFO);
             return Level.INFO.toString();
-        } else if(levelString.equals(Level.WARN.toString())) {
+        } else if (levelString.equals(Level.WARN.toString())) {
             logger.setLevel(Level.WARN);
             return Level.WARN.toString();
-        } else if(levelString.equals(Level.ERROR.toString())) {
+        } else if (levelString.equals(Level.ERROR.toString())) {
             logger.setLevel(Level.ERROR);
             return Level.ERROR.toString();
-        } else if(levelString.equals(Level.FATAL.toString())) {
+        } else if (levelString.equals(Level.FATAL.toString())) {
             logger.setLevel(Level.FATAL);
             return Level.FATAL.toString();
-        } else if(levelString.equals(Level.OFF.toString())) {
+        } else if (levelString.equals(Level.OFF.toString())) {
             logger.setLevel(Level.OFF);
             return Level.OFF.toString();
         } else {
@@ -342,7 +360,7 @@ public class KVClient implements IKVClient {
                 + "ALL | DEBUG | INFO | WARN | ERROR | FATAL | OFF");
     }
 
-    private void printHelp(){
+    private void printHelp() {
         StringBuilder sb = new StringBuilder();
         sb.append(PROMPT).append("ECHO CLIENT HELP (Usage):\n");
         sb.append(PROMPT);
@@ -369,7 +387,9 @@ public class KVClient implements IKVClient {
         System.out.println(sb.toString());
     }
 
-    private void printError(String e) {System.out.println(PROMPT + "Error: " + e);}
+    private void printError(String e) {
+        System.out.println(PROMPT + "Error: " + e);
+    }
 
     public static void main(String[] args) {
         try {
